@@ -11,6 +11,8 @@ html
     overflow-x: hidden
 
 body
+    color: $black
+    @include raleway
     
 .container
     max-width: 1220px
@@ -46,4 +48,12 @@ svg
 
 .footer
     flex: 0 0 auto
+
+// SPECIAL CLASSES
+
+button
+    @include button
+
+button:hover
+    @include button-hover
     
