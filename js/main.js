@@ -8,3 +8,9 @@ headerBurger.addEventListener('click', () => {
     headerBurger.classList.add('hidden')
     headerCloseMenu.classList.remove('none')
 })
+
+headerCloseMenu.addEventListener('click', () => {
+    headerWindow.classList.add('none')
+    headerCloseMenu.classList.add('none')
+    headerBurger.classList.remove('hidden')
+})
