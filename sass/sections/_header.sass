@@ -33,5 +33,45 @@
     // ADAPTIVE ELEMENTS
 
     &__burger
+        display: none
         @include mobile
             display: block
+    &__window
+        font-weight: 500
+        font-size: 18px
+        position: absolute
+        right: -600px
+        top: 100px
+        background-color: $black
+        color: $white
+        width: 320px
+        height: 450px
+        padding: 0 20px
+    &__window-item
+        padding-bottom: 25px
+    &__window-item:first-child
+        padding-top: 25px
+    &__window-small-mobile
+        display: none
+        @include mobile-small
+            display: block
+    &__window-socials
+        display: flex
+    &__window-social
+        margin-right: 18px
+    &__window-phone
+        display: flex
+        padding: 70px 0 30px 0
+    &__window-phone-image
+        margin-right: 12px
+
+.header__window-show
+    animation: header-window-show 0.5s
+    animation-fill-mode: forwards
+
+@keyframes header-window-show
+    0%
+        right: -600px
+        
+    100%
+        right: 0
